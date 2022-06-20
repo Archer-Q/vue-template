@@ -3,18 +3,17 @@
     <el-icon color="#409EFC" class="no-inherit" @click="handleAdd">
       <Share />
     </el-icon>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <PubAddForm msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import PubAddForm from '@/components/pubAddForm.vue'; // @ is an alias to /src
 
 @Options({
   components: {
-    HelloWorld,
+    PubAddForm,
   },
 })
 export default class HomeView extends Vue {
